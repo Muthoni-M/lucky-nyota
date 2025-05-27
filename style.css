@@ -1,0 +1,637 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', Roboto;
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .container {
+    max-width: 430px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #f2bc11;
+  }
+  
+  .logo {
+    color: #f2bc11;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .red-text {
+    color: red;
+  }
+  
+  .nav-buttons button {
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #f2bc11;
+    padding: 5px 15px;
+    margin-left: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .nav-buttons .active {
+    background-color: #f2bc11;
+    color: #000;
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 30px;
+  }
+  
+  p {
+    text-align: center;
+    color: #f2bc11;
+    font-size: 14px;
+  }
+  
+  form {
+    border: 1px solid #f2bc11;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 15px;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    width: 95%;
+    padding: 12px;
+    border: 1px solid #f2bc11;
+    border-radius: 5px;
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .checkbox {
+    margin-top: 15px;
+    display: flex;
+    align-items: flex-start;
+
+  }
+  
+  .checkbox input {
+    border: 2px #f41313;
+    margin-top: 3px;
+    margin-right: 8px;
+   
+  }
+  
+  .checkbox small {
+    font-size: 12px;
+  }
+  
+  .submit-btn {
+    width: 90%;
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #f2bc11;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+  
+  }
+  
+  .submit-btn:hover {
+    background-color: #e6a800;
+  }
+
+  .login-redirect-box {
+    border: 1px solid #f2bc11;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    margin-top: 40px;
+    color: #fff;
+  }
+  
+  .login-redirect-box p {
+    margin: 0;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 13px;
+  }
+  
+  .login-link {
+    display: inline-block;
+    padding: 8px 20px;
+    border: 1px solid #f2bc11;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #f2bc11;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .login-link:hover {
+    background-color: #f2bc11;
+    color: #000;
+  }
+  
+
+  /* LOGIN PAGE */
+
+ /* Base & Layout */
+body.login-body {
+  margin: 0;
+  padding: 0;
+  background: #000;
+  color: #fff;
+  font-family: 'Montserrat', Roboto;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.login-container {
+  width: 100%;
+  max-width: 430px;
+}
+
+/* Header/Nav */
+.login-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.yellow { color: #F2BC11; }
+.red    { color: #E30000; }
+
+.login-nav .nav-btn {
+  margin-left: 8px;
+  padding: 6px 12px;
+  border: 1px solid #F2BC11;
+  background: transparent;
+  color: #F2BC11;;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.nav-btn {
+  background-color: #F2BC11;
+  color: #000;
+  
+}
+
+/* Form title */
+.form-title {
+  text-align: center;
+  margin: 20px 0 8px;
+ 
+}
+.form-subtitle {
+  text-align: center;
+  color: #F2BC11;
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+}
+
+/* Form box */
+.form-box {
+  border: 1px solid #F2BC11;
+  border-radius: 6px;
+  padding: 20px;
+}
+
+/* Labels & Inputs */
+.form-box label {
+  display: block;
+  font-size: 0.9rem;
+  margin-bottom: 3px;
+  color: #fff;
+}
+.form-box input {
+  width: 96%;
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #F2BC11;
+  background: transparent;
+  color: #fff;
+  border-radius: 4px;
+  border: round;
+  font-size: 1rem;
+}
+
+/* Password row: input + forgot link */
+.forgot-wrap {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -10px;
+  margin-bottom: 16px;
+}
+
+.forgot-link {
+  font-size: 0.85rem;
+  color: #F2BC11;
+  text-decoration: none;
+}
+
+.forgot-link:hover {
+  text-decoration: underline;
+}
+/* Checkbox */
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  margin-bottom: 16px;
+}
+  
+.checkbox-label input {
+  margin-right: 8px;
+}
+
+
+/* Login button */
+.login-btn {
+  width: 70%;
+  padding: 12px;
+  background: #F2BC11;
+  color: #000;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+/* Redirect box */
+.redirect-box {
+  border: 4px solid #F2BC11;
+  border-radius: 6px;
+  padding: 16px;
+  text-align: center;
+  margin-top: 20px;
+}
+.redirect-box p {
+  margin: 0 0 12px;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: white;
+}
+.redirect-btn {
+  display: inline-block;
+  padding: 8px 20px;
+  border: 1px solid #F2BC11;
+  border-radius: 8px;
+  color: #F2BC11;
+  text-decoration: none;
+  font-weight: bold;
+}
+.redirect-btn:hover {
+  background: #F2BC11;
+  color: #000;
+}
+
+/* RESET PASSWORD */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', Roboto;
+  background-color: #0d0d0d;
+  color: white;
+  min-height: 100vh;
+}
+
+/* Global layout */
+.login-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.login-wrapper {
+  width: 100%;
+  max-width: 400px;
+  background-color: #0d0d0d;
+}
+
+/* Logo/Header */
+.login-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-top: 10px;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+.yellow {
+  color: #f9c013;
+}
+
+.red {
+  color: #f9322c;
+}
+
+.top-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.top-btn {
+  padding: 6px 14px;
+  border: 1px solid #f9c013;
+  color: #f9c013;
+  background-color: transparent;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.top-btn:hover {
+  background-color: #f9c013;
+  color: black;
+}
+
+/* Title */
+.form-title {
+  text-align: center;
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+
+.form-subtitle {
+  text-align: center;
+  font-size: 13px;
+  color: #f9c013;
+  margin-bottom: 20px;
+}
+
+/* Form box */
+.form-box {
+  border: 1px solid #f9322c;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: white;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 16px;
+  background-color: #1a1a1a;
+  border: 1px solid #f9c013;
+  border-radius: 6px;
+  color: white;
+  font-size: 14px;
+}
+
+.login-btn {
+  width: 100%;
+  background-color: #f9c013;
+  color: black;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: #ffdb4d;
+}
+
+/* Alternative actions */
+.alt-box {
+  margin-top: 20px;
+  padding: 16px;
+  border: 1px solid white;
+  text-align: center;
+  border-radius: 8px;
+  font-size: 14px;
+  }
+
+  .alt-box p{
+    color: white;
+  }
+
+.alt-box.yellow-border {
+  border: 1px solid #f9c013;
+}
+
+.alt-box.yellow-border p {
+  color: white;
+}
+
+.alt-btn {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 10px 16px;
+  border: 1px solid white;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.alt-btn:hover {
+  background-color: white;
+  color: #0d0d0d;
+}
+
+.alt-btn.yellow {
+  border-color: #f9c013;
+  color: #f9c013;
+}
+
+.alt-btn.yellow:hover {
+  background-color: #f9c013;
+  color: #0d0d0d;
+  
+}
+
+
+/* DEPOSIT */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  background-color: #000;
+  position: relative;
+  overflow: hidden;
+}
+
+.top-banner {
+  background-color: gold;
+  color: #000;
+  text-align: center;
+  padding: 5px;
+  font-size: 0.9em;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #000;
+}
+
+.top-bar .logo {
+  color: gold;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.top-bar .buttons button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  border: 1px solid #F2BC11;
+  background: #000;
+  color: #F2BC11;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.buttons button{
+  transition-duration: 0.5ms;
+}
+
+.buttons button:hover{
+  
+    background-color: #f2bc11; 
+    color: black;
+}
+
+.split-line {
+  height: 3px;
+  background: linear-gradient(to right, #F2BC11 50%, red 50%);
+  margin-bottom: 1px;
+}
+
+.header {
+  text-align: center;
+  padding: 3px;
+  margin-bottom: 0;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.header h2 {
+  color: #F2BC11;
+  margin: 0;
+  padding: 10px 0;
+  margin-top: 1px;
+}
+
+.balance {
+  margin-bottom: 20px;
+  justify-items: left;
+}
+
+.balance p {
+  margin: 10px 0;
+  color: #C7C8C8;
+  display: flex;
+  justify-content: space-between;
+}
+
+.withdraw-text p{
+  align-items: left;
+  padding: 5px;
+  margin-top: 3px;
+}
+
+.withdraw-box {
+  padding: 15px;
+  width:fit-content;
+  border: 1px solid #fff;
+  border: round;
+  border-radius: 15px;
+}
+
+.withdraw-box input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: none;
+  background-color: white;
+}
+
+.withdraw-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #F2BC11;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  max-width: 400px;
+  background-color: #111;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+}
+
+.footer div {
+  text-align: center;
+  color: #fff;
+  font-size: 0.8em;
+}

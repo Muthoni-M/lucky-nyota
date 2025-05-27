@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login - LuckyNyota</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="login-body">
+  <div class="login-container">
+    <!-- Header/Nav -->
+    <div class="login-header">
+      <div class="logo">⭐ <span class="yellow">Lucky</span><span class="red">Nyota</span></div>
+      <div class="login-nav">
+        <button class="nav-btn yellow-btn">Login</button>
+        <button class="nav-btn">Register</button>
+      </div>
+    </div>
+
+    <hr class="divider"/>
+
+    <!-- Title & Subtitle -->
+    <h2 class="form-title">Login</h2>
+    <p class="form-subtitle">Enter your phone number and password below</p>
+
+    <!-- Form Box -->
+    
+      <form class="form-box">
+        <!-- Phone -->
+        <label for="phone">Phone Number</label>
+        <input type="text" id="phone" placeholder="e.g. 0712 345 678">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="password">
+
+
+         <!-- Forgot Password -->
+          <div class="forgot-wrap">
+            <a href="forgot-password.html" class="forgot-link">Forgot Password?</a>
+          </div>
+        
+
+        <!-- Checkbox -->
+        <label class="checkbox-label">
+          <input type="checkbox" />
+          Keep me logged in
+        </label>
+
+        <!-- Login Button -->
+        <button type="submit" class="login-btn">Login</button>
+      </form>
+    
+
+    <!-- New Member Redirect -->
+    <div class="redirect-box">
+      <p>Are you a new member? Karibu.<br>Join LuckyNyota</p>
+      <a href="register.html" class="redirect-btn">Register here</a>
+    </div>
+  </div>
+</body>
+</html>
