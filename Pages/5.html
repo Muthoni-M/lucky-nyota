@@ -3,73 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pages.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <title>Reset passcode Page</title>
 </head>
 <body>
     <nav>
-        <!-- dropdown  -->
-        <!--  logo and caption-->
-          <p><i></i><span>Lucky</span> <span>Nyota</span></p>
-        <!--  login button-->
-          <button>Login</button>
+        <div class="logins1">
+            <!-- dropdown  -->
+            <i class="fas fa-bars"></i>
+            <!--  logo and caption-->
+            <i class="far fa-star" style="font-size: 30px; margin-left: 15px; color: gold;" ></i>
+            <p></i><span style="color: goldenrod;">Lucky</span><span style="color: orangered;">Nyota</span></p>
+        </div>
+        <div id="logins">
+            <!--  login button-->
+          <button style="color: gold;">Login</button>
         <!--  register button-->
-          <button>Login</button>
+          <button style="background-color: gold;">Register</button>
+        </div>
     </nav>
 
 
-    <main>
-        <h4>Reset Password</h4>
-        <div>
-            <h4>Enter your phone number and password below</h4>
-            <div>
-                <label for="phone">Phone Number</label>
-                <input type="text" name="phone" id="phone" placeholder="e.g. 0712345678" required>
-                <label for="password">password</label>
-                <input type="text" name="password" placeholder="Password" required>
-                <label for=""></label>
-                <input type="text" name="confirm_password" placeholder="Confirm_password" required>
+    <main id="main">
+        <div class="form-container">
+            <div class="starter">
+            <h4 style="margin-bottom: 20px;">Reset Password</h4>
+            <h4>Enter your phone number and new password below</h4>
             </div>
-            <button>Get Reset code</button>
-        </div>
 
-        <div>
-            <h3>Already have a reset code?</h3>            
-            <button>Register here</button>
-        </div>
+            <form class="details">
+            <div class="labels">
+                <label for="phone">Phone Number</label>
+                <input type="text" name="phone" id="phone" placeholder="e.g. 0712345678" required />
+            </div>
+            <div class="labels">
+                <label for="password">New Password</label>
+                <input type="password" name="password" placeholder="New Password" required />
+            </div>
+            <div class="labels">
+                <label for="confirm_password">Confirm Password</label>
+                <input type="password" name="confirm_password" placeholder="Confirm Password" required />
+            </div>
 
-         <div>
-            <h3>Already have an account?</h3>            
-            <button>Login here</button>
-        </div>
+            <button class="button_1">Get Reset Code</button>
+            </form>
 
+            <div class="logged">
+            <h3>Already have a reset code?</h3>
+            <button class="button_2">Enter Code</button>
+            </div>
+
+            <div class="logged">
+            <h3>Already have an account?</h3>
+            <button class="button_2">Login Here</button>
+            </div>
+        </div>
     </main>
-    <Footer>
-        <!-- home icon -->
-         <div id= "home">
-            <i></i>
-            <h4>Home</h4>
-         </div>
-        <!-- promo icon -->
-         <div id="promo">
-            <i></i>
-            <h4>Promos</h4>
-         </div>
-        <!-- my bets icon -->
-         <div id="bets">
-            <i></i>
-            <h4>My Bets</h4>
-         </div>
-        <!-- winners icon -->
-         <div id="winners">
-            <i></i>
-            <h4>Winners</h4>
-         </div>
-        <!-- profile icon -->
-         <div id="profile">
-            <i></i>
-            <h4>Profile</h4>
-         </div>
 
+    <Footer>
+        <nav class="nav-bar">
+            <a href="/home" class="footer-link">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
+            </a>
+            <a href="/mybet" class="footer-link">
+                <i class="fas fa-ticket-alt"></i>
+                <span>My Bet</span>
+            </a>
+            <a href="/promo" class="footer-link">
+                <i class="fas fa-gift"></i>
+                <span>Promo</span>
+            </a>
+            <a href="/trophy" class="footer-link">
+                <i class="fas fa-trophy"></i>
+                <span>Trophy</span>
+            </a>
+            <a href="/profile" class="footer-link">
+                <i class="fas fa-user"></i>
+                <span>Profile</span>
+            </a>
+        </nav>
     </Footer>
 </body>
 </html>
