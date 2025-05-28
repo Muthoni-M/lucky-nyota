@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    margin: 0 20px;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer"
+    ;
+    gap: 10px;
+}
+nav{
+    grid-area: header;
+    border: 2px solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+main{
+    grid-area: main;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+}
+input{
+    border-radius: 5px;
+}
+.details{
+    border: 2px solid;
+    margin: 10px;
+}
+.labels{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+label{
+    margin-bottom: 3px;
+    font-weight: bold;
+}
+.labels input{
+    width: 50%;
+    padding: 5px;
+}
+.details_log{
+    /* border: 2px solid; */
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+.check{
+    width: 20px;
+    height: 20px;
+}
+.personna{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+h4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 0;
+}
+.logged{
+    border: 2px solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px 0px;
+}
+.button_1{
+    margin: 15px 200px;
+    padding: 10px 30px;
+    font-weight: bold;
+}
+.button_2{
+    margin: 15px 200px;
+    padding: 5px 50px;
+    font-weight: bold;
+}
+
+footer{
+    grid-area: footer;
+    border: 2px solid;
+}
+button{
+    padding: 3px 15px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+
+.footer-bar {
+  display: flex;
+  justify-content: space-around;
+  background-color: #fff;
+  padding: 10px 0;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.footer-link {
+  text-decoration: none;
+  color: #444;
+  text-align: center;
+  font-size: 14px;
+}
+
+.footer-link i {
+  font-size: 20px;
+  display: block;
+}
+span{
+    font-weight: bold;
+}

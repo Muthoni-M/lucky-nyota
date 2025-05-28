@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pages.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <title>Register page</title>
+</head>
+<body>
+    <nav>
+        <!-- dropdown  -->
+        <!--  logo and caption-->
+          <p><i></i><span>Lucky</span> <span>Nyota</span></p>
+        <div id="logins">
+            <!--  login button-->
+          <button>Login</button>
+        <!--  register button-->
+          <button>Register</button>
+        </div>
+    </nav>
+
+
+    <main id="main">
+        <h4>Join Lucky Nyota now</h4>
+        <div>
+            <h4>Enter your phone number and password below</h4>
+            <div class="details">
+                <div class="personna">
+                    <div class="labels">
+                        <label for="phone">Phone Number</label>
+                        <input type="text" name="phone" id="phone" placeholder="e.g. 0712345678" required style="padding: 8px;">
+                    </div>
+                    <div class="labels">
+                        <label for="password">password</label>
+                        <input type="text" name="password" placeholder="Password" required style="padding: 8px;">
+                    </div>
+                    <div class="labels">
+                        <label for="">Confirm Password</label>
+                        <input type="text" name="confirm_password" placeholder="Confirm Password" required style="padding: 8px;">
+                    </div>
+                </div>
+                <div class="details_log">
+                    <input type="checkbox" name="terms" class="check">
+                    <p>I confirm that am of legal age 18 years and accept the terms conditions and policies of this site. </p>
+                </div>
+                <button class="button_1">Register and verify</button>
+            </div>
+        </div>
+
+        <div class="logged">
+            <h3>Already have an account?</h3>
+            <button class="button_2">Login here</button>
+        </div>
+    </main>
+    <Footer>
+        <nav class="nav-bar">
+            <a href="/home" class="footer-link">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
+            </a>
+            <a href="/mybet" class="footer-link">
+                <i class="fas fa-ticket-alt"></i>
+                <span>My Bet</span>
+            </a>
+            <a href="/promo" class="footer-link">
+                <i class="fas fa-gift"></i>
+                <span>Promo</span>
+            </a>
+            <a href="/trophy" class="footer-link">
+                <i class="fas fa-trophy"></i>
+                <span>Trophy</span>
+            </a>
+            <a href="/profile" class="footer-link">
+                <i class="fas fa-user"></i>
+                <span>Profile</span>
+            </a>
+        </nav>
+    </Footer>
+</body>
+</html>
