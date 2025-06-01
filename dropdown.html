@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuckyNyota Mobile Dropdown Menu</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'menu-yellow': '#fbbf24',
+                        'menu-red': '#dc2626',
+                        'menu-dark': '#1f2937',
+                        'menu-darker': '#111827'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-900 text-white font-sans">
+    <!-- Main Menu Container -->
+    <div class="w-full h-1/2 bg-menu-darker shadow-2xl">
+        <!-- Menu Header -->
+        <div class="flex justify-between items-center p-4 border-b border-menu-red bg-menu-dark">
+            <h2 class="text-lg font-bold text-menu-yellow">MAIN <span class="text-menu-yellow">MENU</span></h2>
+            <button class="text-menu-red border border-menu-red px-3 py-1 rounded text-sm hover:bg-menu-red hover:text-white transition-colors">
+                CLOSE (X)
+            </button>
+        </div>
+
+        <!-- Menu Items -->
+        <div class="bg-menu-darker">
+            <!-- My Account -->
+            <a href="#" class="flex items-center px-4 py-4 border-b border-gray-800 hover:bg-gray-800 transition-colors group">
+                <div class="w-6 h-6 mr-4 text-menu-yellow">
+                    <i class="fas fa-shopping-cart text-lg"></i>
+                </div>
+                <span class="text-white group-hover:text-menu-yellow transition-colors">My Account - Deposits and withdrawals</span>
+            </a>
+            
+            <!-- My Bets -->
+            <a href="#" class="flex items-center px-4 py-4 border-b border-gray-800 hover:bg-gray-800 transition-colors group">
+                <div class="w-6 h-6 mr-4 text-menu-yellow">
+                    <i class="fas fa-file-alt text-lg"></i>
+                </div>
+                <span class="text-white group-hover:text-menu-yellow transition-colors">My Bets</span>
+            </a>
+            
+            <!-- Promotions & Offers -->
+            <a href="#" class="flex items-center px-4 py-4 border-b border-gray-800 hover:bg-gray-800 transition-colors group">
+                <div class="w-6 h-6 mr-4 text-menu-yellow">
+                    <i class="fas fa-gift text-lg"></i>
+                </div>
+                <div class="flex items-center flex-1">
+                    <span class="text-white group-hover:text-menu-yellow transition-colors">Promotions & Offers</span>
+                    <span class="ml-3 bg-menu-red text-white text-xs px-2 py-1 rounded font-bold">NEW!</span>
+                </div>
+            </a>
+            
+            <!-- Customer Support -->
+            <a href="#" class="flex items-center px-4 py-4 border-b border-gray-800 hover:bg-gray-800 transition-colors group">
+                <div class="w-6 h-6 mr-4 text-menu-yellow">
+                    <i class="fas fa-phone text-lg"></i>
+                </div>
+                <span class="text-white group-hover:text-menu-yellow transition-colors">Customer Support - Call center contacts</span>
+            </a>
+            
+            <!-- FAQ -->
+            <a href="#" class="flex items-center px-4 py-4 border-b border-gray-800 hover:bg-gray-800 transition-colors group">
+                <div class="w-6 h-6 mr-4 text-menu-yellow">
+                    <i class="fas fa-lightbulb text-lg"></i>
+                </div>
+                <span class="text-white group-hover:text-menu-yellow transition-colors">Frequently Asked Questions</span>
+            </a>
+            
+            <!-- Terms of Service -->
+            <a href="#" class="flex items-center px-4 py-4 border-b border-gray-800 hover:bg-gray-800 transition-colors group">
+                <div class="w-6 h-6 mr-4 text-menu-yellow">
+                    <i class="fas fa-medal text-lg"></i>
+                </div>
+                <span class="text-white group-hover:text-menu-yellow transition-colors">Terms of service</span>
+            </a>
+            
+            <!-- How to Play -->
+            <a href="#" class="flex items-center px-4 py-4 border-b border-gray-800 hover:bg-gray-800 transition-colors group">
+                <div class="w-6 h-6 mr-4 text-menu-yellow">
+                    <i class="fas fa-gamepad text-lg"></i>
+                </div>
+                <span class="text-white group-hover:text-menu-yellow transition-colors">How to Play</span>
+            </a>
+            
+            <!-- Responsible Gaming -->
+            <a href="#" class="flex items-center px-4 py-4 border-b border-gray-800 hover:bg-gray-800 transition-colors group">
+                <div class="w-6 h-6 mr-4 text-menu-yellow">
+                    <i class="fas fa-file-contract text-lg"></i>
+                </div>
+                <span class="text-white group-hover:text-menu-yellow transition-colors">Responsible Gaming Information</span>
+            </a>
+            
+            <!-- Logout -->
+            <a href="#" class="flex items-center px-4 py-4 border-b border-gray-800 hover:bg-gray-800 transition-colors group">
+                <div class="w-6 h-6 mr-4 text-menu-red">
+                    <i class="fas fa-sign-out-alt text-lg"></i>
+                </div>
+                <span class="text-menu-red group-hover:text-red-400 transition-colors">Logout</span>
+            </a>
+
+            <div class="absolute  left-0 right-0 bg-black p-4">
+            <div class="text-center">
+                <p class="text-white text-sm mb-2">Angukia 100% First Deposit Match Bonus of upto</p>
+                <p class="text-yellow-400 text-lg font-bold mb-3">Ksh.20,000 Instantly!</p>
+                <button class="border border-yellow-400 text-yellow-400 px-6 py-2 rounded-full text-sm font-medium hover:bg-yellow-400 hover:text-black transition-all">
+                    Deposit & Claim it now!
+                </button>
+            </div>
+        </div>
+        </div>
+
+        
+    </div>
+
+</body>
+</html>
