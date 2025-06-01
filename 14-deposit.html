@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuckyNyota - Deposit Funds</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'lucky-yellow': '#fbbf24',
+                        'lucky-red': '#dc2626',
+                        'lucky-dark': '#1f2937',
+                        'lucky-darker': '#111827',
+                        'lucky-black': '#000000'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-lucky-black text-white font-sans">
+    <!-- Mobile Container -->
+    <div class="max-w-sm mx-auto bg-lucky-black min-h-screen">
+    
+    <!-- Top Banner -->
+    <div class="bg-gradient-to-r from-lucky-yellow to-amber-500 text-black p-3 text-center text-sm font-medium">
+        Get 100% Deposit Match Bonus now! ➜ M-pesa Paybill No. 123456
+    </div>
+
+    <!-- Header- The logo iko lacking not found the best Icon to use-->
+    <div class="bg-lucky-darker p-4 flex justify-between items-center border-b border-gray-800">
+        <button class="text-white">
+            <i class="fas fa-bars text-xl"></i>
+        </button>
+        
+        <div class="flex items-center space-x-2">
+            <div class="w-8 h-8 bg-lucky-yellow rounded-full flex items-center justify-center">
+                <span class="text-black font-bold text-xl">★</span>
+            </div>
+            <span class="text-lucky-yellow font-bold text-lg">Lucky<span class="text-lucky-red">Nyota</span></span>
+        </div>
+        
+        <div class="flex items-center space-x-3">
+            <button class="border border-lucky-yellow text-lucky-yellow px-4 py-2 rounded-full text-sm font-medium hover:bg-lucky-yellow hover:text-black transition-all">
+                Login
+            </button>
+            <button class="bg-lucky-yellow text-black px-4 py-2 rounded-full text-sm font-medium hover:bg-yellow-500 transition-all">
+                Register
+            </button>
+        </div>
+    </div>
+
+    <!-- My Account Section -->
+    <div class="bg-lucky-darker p-4 border-b border-gray-800">
+        <h2 class="text-lucky-yellow text-lg font-medium text-center mb-4">My Account</h2>
+        
+        <div class="space-y-3">
+            <div class="flex justify-between items-center">
+                <span class="text-white">Available Balance:</span>
+                <span class="text-white font-medium">Ksh.10,670.28</span>
+            </div>
+            <div class="flex justify-between items-center">
+                <span class="text-white">Bonus Balance:</span>
+                <span class="text-white font-medium">Ksh.0.00</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Deposit Funds Section -->
+    <div class="p-4">
+        <h3 class="text-lucky-yellow text-lg font-medium mb-6">Deposit Funds into your account</h3>
+        
+        
+        <div class="bg-lucky-darker border border-gray-700 rounded-2xl p-4 mb-6">
+        
+            <div class="mb-4">
+                <label class="block text-white text-sm mb-3">Enter the amount you wish to deposit</label>
+                <input 
+                    type="text" 
+                    value="Ksh.50" 
+                    class="w-full bg-white text-black p-4 rounded-lg text-left font-medium focus:outline-none focus:ring-2 focus:ring-lucky-yellow"
+                />
+            </div>
+            <div class="grid grid-cols-4 gap-2">
+                <button class="bg-lucky-darker text-lucky-yellow py-3 px-2 rounded-lg text-sm font-medium border border-gray-600 hover:bg-gray-600 transition-all">
+                    Ksh.20
+                </button>
+                <button class="bg-lucky-darker text-lucky-yellow py-3 px-2 rounded-lg text-sm font-medium border border-gray-600 hover:bg-gray-600 transition-all">
+                    Ksh.50
+                </button>
+                <button class="bg-lucky-darker text-lucky-yellow py-3 px-2 rounded-lg text-sm font-medium border border-gray-600 hover:bg-gray-600 transition-all">
+                    Ksh.100
+                </button>
+                <button class="bg-lucky-darker text-lucky-yellow py-3 px-2 rounded-lg text-sm font-medium border border-gray-600 hover:bg-gray-600 transition-all">
+                    Ksh.200
+                </button>
+            </div>
+        </div>
+
+        <!-- Deposit Button -->
+        <button class="w-full bg-lucky-yellow text-black py-4 rounded-lg font-bold text-lg hover:bg-yellow-500 transition-all mb-6">
+            Deposit funds
+        </button>
+
+        <!-- M-pesa Instructions -->
+        <div class="mb-6">
+            <p class="text-white text-sm mb-3">Deposit directly using M-pesa Paybill</p>
+            
+            <div class="space-y-2">
+                <div class="flex items-center">
+                    <span class="text-white text-sm">Paybill Number :</span>
+                    <span class="text-lucky-yellow font-bold ml-2">123456</span>
+                </div>
+                <div class="flex items-center">
+                    <span class="text-white text-sm">Account Name/Number :</span>
+                    <span class="text-lucky-yellow font-bold ml-2">0712345678</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Promotional Banner -->
+    <div class="mx-4 mb-24 pb-4">
+        <div class="bg-lucky-black border border-gray-700 rounded-lg p-4 text-center">
+            <p class="text-white text-sm mb-2">Angukia 100% First Deposit Match Bonus of upto</p>
+            <p class="text-lucky-yellow text-lg font-bold mb-3">Ksh.20,000 Instantly!</p>
+            <button class="border border-lucky-yellow text-lucky-yellow px-6 py-2 rounded-full text-sm font-medium hover:bg-lucky-yellow hover:text-black transition-all">
+                Deposit & Claim it now!
+            </button>
+        </div>
+    </div>
+
+    <!-- Bottom Navigation -->
+    <div class="fixed bottom-0 left-1/2 transform -translate-x-1/2 w-full max-w-sm bg-lucky-darker border-t border-gray-700">
+        <div class="flex justify-around py-3">
+            <button class="flex flex-col items-center text-lucky-yellow">
+                <i class="fas fa-home text-lg mb-1"></i>
+                <span class="text-xs">Home</span>
+            </button>
+            <button class="flex flex-col items-center text-gray-400 relative">
+                <i class="fas fa-gift text-lg mb-1"></i>
+                <span class="text-xs">Promos</span>
+                <div class="absolute -top-1 -right-1 bg-lucky-red text-white text-xs px-1.5 py-0.5 rounded-full font-bold">NEW!</div>
+            </button>
+            <button class="flex flex-col items-center text-gray-400">
+                <i class="fas fa-clipboard-list text-lg mb-1"></i>
+                <span class="text-xs">My Bets</span>
+            </button>
+            <button class="flex flex-col items-center text-gray-400">
+                <i class="fas fa-trophy text-lg mb-1"></i>
+                <span class="text-xs">Winners</span>
+            </button>
+            <button class="flex flex-col items-center text-gray-400">
+                <i class="fas fa-user text-lg mb-1"></i>
+                <span class="text-xs">Profile</span>
+            </button>
+        </div>
+    </div>
+
+</div>
+
+    <script>
+        
+        document.querySelectorAll('.grid button').forEach(button => {
+            button.addEventListener('click', function() {
+                const amount = this.textContent.trim();
+                document.querySelector('input').value = amount;
+            });
+        });
+
+        
+        const input = document.querySelector('input');
+        input.addEventListener('focus', function() {
+            this.select();
+        });
+    </script>
+
+</body>
+</html>
