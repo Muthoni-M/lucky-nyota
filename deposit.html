@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Deposit Page</title>
   <link rel="stylesheet" href="style.css">
-
-</head>
-<body>
+ </head>
+ <body>
   <div class="container">
     <div class="top-banner">
       Get 100% Deposit Match Bonus now! → M-pesa Paybill No. 123456
@@ -21,31 +20,55 @@
       </div>
     </div>
 
-    <div class="split-line"></div>
+    <div class="hr-line"></div>
 
     <div class="header">
       <h2>My Account</h2>
     </div>
 
     <div class="balance">
-      <p>Available Balance: <strong>Ksh.1000</strong></p>
+ 
+      <div class="row">
+        <div class="col-md-6">Available Balance :</div>
+        <div class="col-md-6"><strong>Ksh.1000</strong></div>
+      </div>
       <p>Bonus Balance: <strong>Ksh.0.00</strong></p>
     </div>
    
     <div class="deposit-text">
       <p>Deposit funds into your account</p>
-  </div>
-  
-  <div class="deposit-box">
-    <label for="deposit-amount">Enter the amount you wish to withdraw</label>
-    <input type="text" id="amount" placeholder="Ksh.50">
-    <div class="deposit-options">
-      <button type="button">Ksh.20</button>
-      <button type="button">Ksh.50</button>
-      <button type="button">Ksh.100</button>
-      <button type="button">Ksh.200</button>
     </div>
-    
+
+    <div class="deposit-box">
+      <label for="amount">Enter the amount you wish to withdraw</label>
+      <input type="text" id="amount" placeholder="Ksh.50" />
+
+      <div class="deposit-options">
+        <button type="button">Ksh.20</button>
+        <button type="button">Ksh.50</button>
+        <button type="button">Ksh.100</button>
+        <button type="button">Ksh.200</button>
+      </div>
+    </div>
+
+    <button class="deposit-button">Deposit Funds</button>
+
+    <div class="payment-info">
+      <p>Deposit directly using M-pesa Paybill</p>
+      <p><strong>Paybill Number :</strong> <span class="highlight">123456</span></p>
+      <p><strong>Account Name/Number :</strong> <span class="highlight">0712345678</span></p>
+    </div>
+
+
+    <div class="hr-line"></div>
+
+    <div class="bonus">
+      <p>Angukia 100% First Deposit Match Bonus of upto<br>Ksh.20,000 Instantly!</p>
+    </div>
+
+    <div class="bonus-button">
+      <button type="button">Deposit it & Claim it now!</button>
+    </div>
   </div>
-  <button class="deposit-button">Deposit Funds</button>
-</div>
+</body>
+</html>
