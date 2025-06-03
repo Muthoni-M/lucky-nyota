@@ -166,8 +166,8 @@ body {
  body.login-body {
   margin: 0;
   padding: 0;
-  background: #000;
-  color: #fff;
+  /* background: #000;
+  color: #fff; */
   font-family: 'Montserrat', Roboto;
   display: flex;
   justify-content: center;
@@ -191,23 +191,28 @@ body {
   font-size: 1.5rem;
   font-weight: bold;
 }
-
-.yellow { color: #F2BC11; }
-.red    { color: #E30000; }
+ 
 
 .login-nav .nav-btn {
   margin-left: 8px;
   padding: 6px 12px;
   border: 1px solid #F2BC11;
-  background: transparent;
+  background: black;
   color: #F2BC11;;
-  border-radius: 4px;
+  border-radius: 8px;
   cursor: pointer;
 }
-.nav-btn {
+
+
+.nav-btn:hover{
   background-color: #F2BC11;
-  color: #000;
-  
+  color: black;
+}
+
+.divider {
+  height: 2px;
+  background: linear-gradient(to right, #F2BC11 50%, red 50%);
+  margin: 8px auto 16px;
 }
 
 /* Form title */
@@ -225,7 +230,7 @@ body {
 
 /* Form box */
 .form-box {
-  border: 1px solid #F2BC11;
+  border: 1px solid #f2bc11;
   border-radius: 6px;
   padding: 20px;
 }
@@ -281,11 +286,11 @@ body {
 
 /* Login button */
 .login-btn {
-  width: 70%;
-  padding: 12px;
+  width: 50%;
+  padding: 8px;
   background: #F2BC11;
   color: #000;
-  border: none;
+  border: 20px;
   border-radius: 4px;
   font-weight: bold;
   cursor: pointer;
@@ -294,7 +299,7 @@ body {
 
 /* Redirect box */
 .redirect-box {
-  border: 4px solid #F2BC11;
+  border: 2px solid #F2BC11;
   border-radius: 6px;
   padding: 16px;
   text-align: center;
@@ -410,7 +415,7 @@ body {
 
 /* Form box */
 .form-box {
-  border: 1px solid #f9322c;
+  border: 1px solid #f2bc11;
   padding: 20px;
   border-radius: 8px;
 }
